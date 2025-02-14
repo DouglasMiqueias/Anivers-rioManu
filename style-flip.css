@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(imagens/background-aniversário.jpg);
+    background-size: cover;
+    
+}
+button{
+    height: 3rem;
+    width: 3rem;
+    display: block;
+    margin: auto;
+}
+
+.botao{
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0 0 8px #00000041;
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.containerFlip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.container{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    /* Escolher tamanho da img*/
+}
+.container:hover .flip{
+    transform: rotateY(180deg);
+
+}
+
+.flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.frente,.tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #000000;
+    backface-visibility: hidden;
+
+}
+
+.f0{
+    background-image: url(imagens/manu-douglas.jpg);
+    background-size: cover;
+}
+
+.f1{
+    background-image: url(imagens/manu-mãe.jpg);
+    background-size: cover;
+}
+.f2{
+    background-image: url(imagens/manu-ingrid.jpg);
+    background-size: cover;
+}
+
+.f3{
+    background-image: url(imagens/manu-geraldo.jpg);
+    background-size: cover;
+}
+
+.f4{
+    background-image: url(imagens/manu-pai.jpg);
+    background-size: cover;
+}
+.f5{
+    background-image: url(imagens/deivisson.jpg);
+    background-size: cover;
+}
+.f6{
+    background-image: url(imagens/nana.jpg);
+    background-size: cover;
+}
+.f7{
+    background-image: url(imagens/manu-sogra.jpg);
+    background-size: cover;
+}
+.tras{
+    background-color: #f4e6ff;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
